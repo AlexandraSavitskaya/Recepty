@@ -2,6 +2,10 @@ package com.example.recepty
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -11,7 +15,10 @@ import androidx.core.view.WindowInsetsCompat
 class MainActivity : AppCompatActivity() {
     //Свойство, которое хранит информацию о том, было ли показано всплывающее сообщение пользователю
     private var showToast = false
-
+    //Метод,который будет срабатывать при нажатии на кнопку через xml-параметр onClick
+    fun buttonClick(view: View) {
+        Toast.makeText(this,"Вы нажали на кнопку через xml макет", Toast.LENGTH_SHORT).show()
+    }
     //Метод onCreate - запускается при старте приложения самым первым, либо после вызова onPause
     //Создает объекты пользовательского интерфейса для показа пользователю
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +30,10 @@ class MainActivity : AppCompatActivity() {
 
         //Игнорирование системных рамок
         enableEdgeToEdge()
+
+
+
+
         //Определяет то, как будет выглядеть экран
         //Содержит ссылку на файл activity.main.xml
         setContentView(R.layout.activity_main)
@@ -49,6 +60,28 @@ Assert - предложения, введённые в программу про
             showToast=true
         }
 
+        //Создание объектов пользовательского интерфейса в коде
+        val textView: TextView = findViewById(R.id.textView)
+        val textView2: TextView = findViewById(R.id.textView2)
+        val button: Button = findViewById<Button>(R.id.button)
+        val imageView =  findViewById<ImageView>(R.id.imageView)
+
+        //Работа с объектами пользовательского интерфейса в коде
+        //Замена текста в TextView
+        textView.text = "Hello"
+        textView.setText("New text")
+        //Слушатель нажатий в TextView
+        textView.setOnClickListener{
+            textView.text = "New text"
+        }
+        //Замена текста в Button
+        button.text = "Click me"
+
+        //Слушатель нажатий в Button
+        button.setOnClickListener{
+            Toast.makeText(this,"Кнопка нажатий", Toast.LENGTH_SHORT).show()
+            button.text = "You click!"
+        }
 
     }
 
