@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -65,6 +66,7 @@ Assert - предложения, введённые в программу про
         val textView2: TextView = findViewById(R.id.textView2)
         val button: Button = findViewById<Button>(R.id.button)
         val imageView =  findViewById<ImageView>(R.id.imageView)
+        val editText = findViewById<EditText>(R.id.EditTextText)
 
         //Работа с объектами пользовательского интерфейса в коде
         //Замена текста в TextView
@@ -81,6 +83,11 @@ Assert - предложения, введённые в программу про
         button.setOnClickListener{
             Toast.makeText(this,"Кнопка нажатий", Toast.LENGTH_SHORT).show()
             button.text = "You click!"
+        }
+        //Слушатель удержания кнопки
+        button.setOnLongClickListener {
+            button.text = "Long click!"
+            return@setOnLongClickListener true
         }
 
     }
