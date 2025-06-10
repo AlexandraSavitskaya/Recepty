@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Рецепты блюд</string>
+    <string name="ncreate">Активность создана</string>
+    <string name="new_text">Новый текст в кнопке</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

@@ -8,6 +8,11 @@ android {
     namespace = "com.example.recepty"
     compileSdk = 35
 
+    //Включение библиотеки viewBinding
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.recepty"
         //Минимальная версия Андроид, на котором будет работать приложение
@@ -49,4 +54,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    //implementation("androidx.fragment:fragment:1.8.8")
 }

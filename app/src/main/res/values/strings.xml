@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Recepty</string>
+    <string name="ncreate">Activity CREATED</string>
+    <string name="new_text">New button text</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
 </resources>

@@ -3,7 +3,12 @@
     <style name="Base.Theme.Recepty" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<!--        Меняем цвет текста-->
+        <item  name ="android:textColor">@color/rose</item>
+<!--        -->
+        <item name="android:background">#DEF2F1</item>
     </style>
 
+<!--Размер, цвет и тип шрифта, цвет фона -->
     <style name="Theme.Recepty" parent="Base.Theme.Recepty" />
 </resources>

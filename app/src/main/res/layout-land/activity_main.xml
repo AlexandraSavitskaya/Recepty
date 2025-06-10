@@ -24,10 +24,10 @@
         android:layout_height="273dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.007"
+        app:layout_constraintVertical_bias="0.181"
         app:srcCompat="@drawable/i" />
 
     <TextView
@@ -37,23 +37,9 @@
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintHorizontal_bias="0.909"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.239" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/material_dynamic_neutral40"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button2"
@@ -63,10 +49,23 @@
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.455"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258" />
+        app:layout_constraintVertical_bias="0.385" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/material_dynamic_neutral40"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
 
     <TextView
         android:id="@+id/textView"
@@ -75,10 +74,10 @@
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.033" />
+        app:layout_constraintVertical_bias="0.151" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -90,10 +89,10 @@
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintHorizontal_bias="0.181"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.549">
+        app:layout_constraintVertical_bias="0.832">
 
         <TextView
             android:id="@+id/textView3"
@@ -105,7 +104,7 @@
             android:id="@+id/editTextText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="20"
+            android:ems="10"
             android:inputType="text"
             android:text="Name" />
 
@@ -113,7 +112,7 @@
             android:id="@+id/editTextTextPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="15"
+            android:ems="10"
             android:inputType="textPassword" />
 
         <EditText
@@ -126,6 +125,7 @@
     </LinearLayout>
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="399dp"
         android:layout_height="116dp"
         android:layout_marginStart="18dp"
@@ -138,7 +138,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.454">
+        app:layout_constraintVertical_bias="0.718">
 
         <ToggleButton
             android:id="@+id/toggleButton2"
@@ -147,6 +147,28 @@
             android:layout_margin="70dp"
             android:checked="true"
             android:text="ToggleButton" />
+
+
     </FrameLayout>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="179dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_input_add"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="153dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
